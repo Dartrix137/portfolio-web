@@ -1,0 +1,158 @@
+---
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Phone from "@/icons/Phone.astro";
+import Email from "@/icons/Email.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Location from "@/icons/Location.astro";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+    GitHub,
+    LinkedIn,
+};
+
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+---
+
+<Section>
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <a
+                href="https://www.google.com/maps/place/Cali,+Valle+del+Cauca/@3.3950609,-76.608065,12z/data=!3m1!4b1!4m6!3m5!1s0x8e30a6f0cc4bb3f1:0x1f0fb5e952ae6168!8m2!3d3.4516467!4d-76.5319854!16zL20vMDFwc3Nm?entry=ttu"
+                target="_blank"
+                class="location"
+            >
+                <span>
+                    <Location />
+                    {city}, {region}
+                </span>
+            </a>
+            <footer class="print">
+                {printInfo}
+            </footer>
+            <footer class="no-print">
+                {
+                    email && (
+                        <a
+                            href={`mailto:${email}`}
+                            title={`Llamar por teléfono a ${name} al número ${phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Email />
+                        </a>
+                    )
+                }
+                {
+                    phone && (
+                        <a
+                            href={`tel: ${phone}`}
+                            title={`Enivar un correo electrónico a ${name} al correo ${email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, url, username }) => {
+                        const Icon = SOCIAL_ICONS[network];
+
+                        return (
+                            <a
+                                href={url}
+                                title={`Visitar el perfil de ${name} en ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />
+                            </a>
+                        );
+                    })
+                }
+            </footer>
+        </div>
+        <figure>
+            <img src={image} alt={name} />
+        </figure>
+    </div>
+</Section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-wrap: balance;
+    }
+
+    img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 150px;
+        border-radius: 16px;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+    .location {
+        color: #e7e7e7;
+    }
+
+    .location:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a {
+        color: #ebe0e0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #636161;
+        padding: 4px;
+        height: 40px;
+        width: 40px;
+        border-radius: 6px;
+    }
+    footer a:hover {
+        background-color: #777;
+    }
+</style>
