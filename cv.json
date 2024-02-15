@@ -1,12 +1,12 @@
 {
     "basics": {
       "name": "Daniel Felipe Trujillo Guzmán",
-      "label": "Desarrolador Fullstack",
+      "label": "Desarrollador Fullstack",
       "image": "/me.webp",
       "email": "daniel.ftg@hotmail.com",
       "phone": "(+57)3155680740",
       "url": "https://johndoe.com",
-      "summary": "Ingeniero de Sistemas con sólida formación académica y experiencia en desarrollo de software, especialmente centrado en el ámbito web. Poseo habilidades de liderazgo demostradas, destacando por mi capacidad para trabajar en equipo de manera efectiva. Soy paciente, adaptable y tengo una actitud positiva ante los desafíos. Destaco por mi capacidad de aprendizaje autónomo y estoy siempre dispuesto a adquirir nuevas experiencias y conocimientos.",
+      "summary": "Ingeniero de Sistemas con sólida formación académica y experiencia en desarrollo de software, especialmente centrado en el ámbito web. Poseo habilidades de liderazgo demostradas, destacado por mi capacidad para trabajar en equipo de manera efectiva. Soy paciente, adaptable y tengo una actitud positiva ante los desafíos. Destaco por mi capacidad de aprendizaje autónomo y estoy siempre dispuesto a adquirir nuevas experiencias y conocimientos.",
       "location": {
         "address": "calle 54 #84-34",
         "postalCode": "760026",
@@ -32,7 +32,7 @@
       "url": "https://www.comfandi.com.co/",
       "startDate": "2023-02-05",
       "endDate": "2023-08-05",
-      "summary": "Description…",
+      "summary": "Recolección de requisitos funcionales para nuevas características de la aplicación móvil 'Mi Comfandi', automatización de procesos mediante la plataforma 'Automation Anywhere', desarrollo de scripts en Python y gestión de bases de datos SQL, brindar soporte técnico para la aplicación móvil 'Mi Comfandi'.",
       "highlights": [
         "Started the company"
       ]
@@ -91,20 +91,58 @@
       "summary": "Description…"
     }],
     "skills": [{
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Javascript",
+      "level": "Medium",
       "keywords": [
-        "HTML",
-        "CSS",
         "JavaScript"
       ]
     },{
-      "name": "Web Development",
-      "level": "Master",
+      "name": "React.js",
+      "level": "Medium",
       "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "React"
+      ]
+    },{
+      "name": "Next.js",
+      "level": "Medium",
+      "keywords": [
+        "Next"
+      ]
+    },{
+      "name": "Node.js",
+      "level": "Medium",
+      "keywords": [
+        "Node"
+      ]
+    },{
+      "name": "Python",
+      "level": "Medium",
+      "keywords": [
+        "Python"
+      ]
+    },{
+      "name": "Sql",
+      "level": "Medium",
+      "keywords": [
+        "Sql"
+      ]
+    },{
+      "name": "Tailwind CSS",
+      "level": "Medium",
+      "keywords": [
+        "CSS"
+      ]
+    },{
+      "name": "Git",
+      "level": "Medium",
+      "keywords": [
+        "Git"
+      ]
+    },{
+      "name": "Github",
+      "level": "Medium",
+      "keywords": [
+        "GitHub"
       ]
     }],
     "languages": [{
