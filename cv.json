@@ -49,23 +49,45 @@
       ]
     }],
     "education": [{
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "institution": "Universidad Libre",
+      "url": "https://www.unilibre.edu.co/cali/",
+      "area": "Ingeniería de sistemas",
+      "studyType": "Pregrado",
+      "startDate": "2018-08-25",
+      "endDate": "2024-03-20",
       "score": "4.0",
       "courses": [
         "DB1101 - Basic SQL"
       ]
     },{
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "institution": "Universidad Libre",
+      "url": "https://www.unilibre.edu.co/cali/",
+      "area": "Ciencia de datos",
+      "studyType": "Diplomado",
+      "startDate": "2023-03-15",
+      "endDate": "2023-09-20",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },{
+      "institution": "Misión TIC 2022",
+      "url": "https://www.misiontic2022.gov.co/portal/",
+      "area": "Desarrollo de aplicaciones web",
+      "studyType": "Diplomado",
+      "startDate": "2021-03-15",
+      "endDate": "2021-12-20",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },{
+      "institution": "Sophos Academy",
+      "url": "https://academy.sophossolutions.com/login/index.php",
+      "area": "Learning path fullstack developer",
+      "studyType": "Diplomado",
+      "startDate": "2023-04-15",
+      "endDate": "2023-07-05",
       "score": "4.0",
       "courses": [
         "DB1101 - Basic SQL"
@@ -146,8 +168,11 @@
       ]
     }],
     "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
+    },{
+      "language": "Inglés",
+      "fluency": "Intermedio"
     }],
     "interests": [{
       "name": "Wildlife",
@@ -161,36 +186,45 @@
       "reference": "Reference…"
     }],
     "projects": [{
-      "name": "Project",
+      "name": "Movies app",
       "isActive":true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description.......... ..... ....... ........",
+      "description": "Aplicación web que utiliza la API de OMDB para ofrecer a los usuarios una experiencia de exploración de películas y series. Con funciones de búsqueda y filtrado, brinda detalles detallados de cada título.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "JavaScript",
+        "React.js",
+        "Bootstrap"
       ],
-      "url": "https://project.com/"
+      "url": "https://infomoviesapp.netlify.app/",
+      "github": "https://github.com/Dartrix137/movies-app"
     },
     {
-      "name": "Project",
+      "name": "Task app",
       "isActive":true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description.......... ..... ....... ........",
+      "description": "Aplicación web para gestión de tareas. Ofrece operaciones CRUD completas, permitiendo a los usuarios crear, organizar, editar y eliminar tareas fácilmente.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Next.js",
+        "Tailwind",
+        "Prisma ORM",
+        "PostgreSQL"
       ],
-      "url": "https://project.com/"
+      "url": "https://nextjs-prisma-crud-xi-orpin.vercel.app/",
+      "github":"https://github.com/Dartrix137/nextjs-prisma-crud"
     },
     {
-      "name": "Project",
+      "name": "Predictor Pruebas saber 11",
       "isActive":false,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description.......... ..... ....... ........",
+      "description": "Proyecto final del diplomado de Ciencia de Datos. Utiliza algoritmos de machine learning para predecir el rendimiento de estudiantes en las pruebas de estado 'Pruebas Saber 11' basado en su contexto socioeconómico.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Python",
+        "Django",
+        "Machine learning"
       ],
-      "url": "https://project.com/"
+      "github": "https://github.com/Dartrix137/djangoproject"
     }]
   }
