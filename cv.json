@@ -200,11 +200,11 @@
       "github": "https://github.com/Dartrix137/movies-app"
     },
     {
-      "name": "Task app",
+      "name": "Gestión de Productos",
       "isActive":true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Aplicación web para gestión de tareas. Ofrece operaciones CRUD completas, permitiendo a los usuarios crear, organizar, editar y eliminar tareas fácilmente.",
+      "description": "Aplicación web que ofrece autenticación segura mediante NextAuth. Los usuarios pueden realizar operaciones de CRUD para subir productos con imagenes",
       "highlights": [
         "Next.js",
         "Tailwind",
@@ -226,5 +226,20 @@
         "Machine learning"
       ],
       "github": "https://github.com/Dartrix137/djangoproject"
+    },
+    {
+      "name": "Task app",
+      "isActive":false,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Aplicación web para gestión de tareas. Ofrece operaciones CRUD completas, permitiendo a los usuarios crear, organizar, editar y eliminar tareas fácilmente.",
+      "highlights": [
+        "Next.js",
+        "Tailwind",
+        "Prisma ORM",
+        "PostgreSQL"
+      ],
+      "url": "https://nextjs-prisma-crud-xi-orpin.vercel.app/",
+      "github":"https://github.com/Dartrix137/nextjs-prisma-crud"
     }]
   }
