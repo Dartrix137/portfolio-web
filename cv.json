@@ -229,7 +229,7 @@
     },
     {
       "name": "Task app",
-      "isActive":false,
+      "isActive":true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Aplicación web para gestión de tareas. Ofrece operaciones CRUD completas, permitiendo a los usuarios crear, organizar, editar y eliminar tareas fácilmente.",
@@ -239,7 +239,7 @@
         "Prisma ORM",
         "PostgreSQL"
       ],
-      "url": "https://nextjs-prisma-crud-xi-orpin.vercel.app/",
+      "url": "https://new-task-app.netlify.app/",
       "github":"https://github.com/Dartrix137/nextjs-prisma-crud"
     }]
   }
