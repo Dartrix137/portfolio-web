@@ -211,7 +211,6 @@
         "Prisma ORM",
         "PostgreSQL"
       ],
-      "url": "https://nextjs-prisma-credentials-ruddy.vercel.app",
       "github":"https://github.com/Dartrix137/nextjs-prisma-credentials"
     },
     {
