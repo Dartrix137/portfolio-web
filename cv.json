@@ -36,7 +36,18 @@
       "highlights": [
         "Started the company"
       ]
-    }],
+    },{
+      "name": "La Filial",
+      "position": "Desarrollador fullstack",
+      "url": "https://lafilial.com.co/",
+      "startDate": "2023-05-15",
+      "endDate": "Presente",
+      "summary": "Desarrollo de CRM llamado Fili para el control del tiempo y la productividad de los freelancers que hace parte del equipo de trabajo. Soporte técnico a páginas desarrolladas en wordpres",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
     "volunteer": [{
       "organization": "Organization",
       "position": "Volunteer",
@@ -186,6 +197,19 @@
       "reference": "Reference…"
     }],
     "projects": [{
+      "name": "Fili CRM",
+      "isActive":true,
+      "startDate": "2024-09-15",
+      "endDate": "2025-02-15",
+      "description": "Es un gestor de proyectos para la toma del control de equipos de trabajo, proyectos, tareas y objetivos de manera simple. Mide la productividad y tiempos en los procesos del negocio. Implementa un sistema de suscripciones para obtener más capacidad de servicio",
+      "highlights": [
+        "Next.js",
+        "Express js",
+        "Typescript",
+        "PostgreSQL"
+      ],
+      "url": "https://app.fili.com.co"
+    },{
       "name": "Movies app",
       "isActive":true,
       "startDate": "2019-01-01",
