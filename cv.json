@@ -154,6 +154,18 @@
         "Python"
       ]
     },{
+      "name": "Java",
+      "level": "Medium",
+      "keywords": [
+        "Java"
+      ]
+    },{
+      "name": "Spring Boot",
+      "level": "Medium",
+      "keywords": [
+        "Spring Boot"
+      ]
+    },{
       "name": "Sql",
       "level": "Medium",
       "keywords": [
