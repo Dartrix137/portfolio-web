@@ -1,21 +1,21 @@
 {
-    "basics": {
-      "name": "Daniel Felipe Trujillo Guzmán",
-      "label": "Desarrollador Fullstack",
-      "image": "/me.webp",
-      "email": "daniel.ftg@hotmail.com",
-      "phone": "(+57)3155680740",
-      "url": "https://johndoe.com",
-      "summary": "Ingeniero de Sistemas con sólida formación académica y experiencia en desarrollo de software, especialmente centrado en el ámbito web. Poseo habilidades de liderazgo demostradas, destacado por mi capacidad para trabajar en equipo de manera efectiva. Soy paciente, adaptable y tengo una actitud positiva ante los desafíos. Destaco por mi capacidad de aprendizaje autónomo y estoy siempre dispuesto a adquirir nuevas experiencias y conocimientos.",
-      "location": {
-        "address": "calle 54 #84-34",
-        "postalCode": "760026",
-        "city": "Cali",
-        "countryCode": "CO",
-        "region": "Colombia"
-      },
-      "profiles": [
-        {
+  "basics": {
+    "name": "Daniel Felipe Trujillo Guzmán",
+    "label": "Desarrollador Fullstack",
+    "image": "/me.webp",
+    "email": "daniel.ftg@hotmail.com",
+    "phone": "(+57)3155680740",
+    "url": "https://johndoe.com",
+    "summary": "Ingeniero de Sistemas con sólida formación académica y experiencia en desarrollo de software, especialmente centrado en el ámbito web. Poseo habilidades de liderazgo demostradas, destacado por mi capacidad para trabajar en equipo de manera efectiva. Soy paciente, adaptable y tengo una actitud positiva ante los desafíos. Destaco por mi capacidad de aprendizaje autónomo y estoy siempre dispuesto a adquirir nuevas experiencias y conocimientos.",
+    "location": {
+      "address": "calle 54 #84-34",
+      "postalCode": "760026",
+      "city": "Cali",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
         "network": "GitHub",
         "username": "Dartrix137",
         "url": "https://github.com/Dartrix137"
@@ -24,9 +24,11 @@
         "network": "LinkedIn",
         "username": "Daniel Felipe Trujillo Guzmán",
         "url": "https://www.linkedin.com/in/daniel-felipe-trujillo-guzm%C3%A1n-21744a1b9/"
-      }]
-    },
-    "work": [{
+      }
+    ]
+  },
+  "work": [
+    {
       "name": "Comfandi",
       "position": "Practicante de sistemas",
       "url": "https://www.comfandi.com.co/",
@@ -36,19 +38,21 @@
       "highlights": [
         "Started the company"
       ]
-    },{
+    },
+    {
       "name": "La Filial",
       "position": "Desarrollador fullstack",
       "url": "https://lafilial.com.co/",
       "startDate": "2023-05-15",
       "endDate": "",
-      "summary": "Desarrollo de CRM llamado Fili para el control del tiempo y la productividad de los freelancers que hace parte del equipo de trabajo. Soporte técnico a páginas desarrolladas en wordpres",
+      "summary": "Desarrollador de software encargado de liderar y ejecutar los proyectos tecnológicos de la empresa, participando en el análisis, diseño, desarrollo, implementación y mantenimiento de soluciones digitales. Desarrollo de aplicaciones web, sistemas empresariales, automatizaciones de procesos y soluciones basadas en inteligencia artificial utilizando diversas tecnologías y herramientas según los requerimientos de cada proyecto. Implementación de integraciones entre plataformas, optimización de procesos operativos mediante automatización y soporte técnico continuo a las soluciones desarrolladas, incluyendo sitios web y aplicaciones empresariales.",
       "highlights": [
         "Started the company"
       ]
     }
   ],
-    "volunteer": [{
+  "volunteer": [
+    {
       "organization": "Organization",
       "position": "Volunteer",
       "url": "https://organization.com/",
@@ -58,8 +62,10 @@
       "highlights": [
         "Awarded 'Volunteer of the Month'"
       ]
-    }],
-    "education": [{
+    }
+  ],
+  "education": [
+    {
       "institution": "Universidad Libre",
       "url": "https://www.unilibre.edu.co/cali/",
       "area": "Ingeniería de sistemas",
@@ -70,7 +76,8 @@
       "courses": [
         "DB1101 - Basic SQL"
       ]
-    },{
+    },
+    {
       "institution": "Universidad Libre",
       "url": "https://www.unilibre.edu.co/cali/",
       "area": "Ciencia de datos",
@@ -81,7 +88,8 @@
       "courses": [
         "DB1101 - Basic SQL"
       ]
-    },{
+    },
+    {
       "institution": "Misión TIC 2022",
       "url": "https://www.misiontic2022.gov.co/portal/",
       "area": "Desarrollo de aplicaciones web",
@@ -92,7 +100,8 @@
       "courses": [
         "DB1101 - Basic SQL"
       ]
-    },{
+    },
+    {
       "institution": "Sophos Academy",
       "url": "https://academy.sophossolutions.com/login/index.php",
       "area": "Learning path fullstack developer",
@@ -103,114 +112,178 @@
       "courses": [
         "DB1101 - Basic SQL"
       ]
-    }],
-    "awards": [{
+    }
+  ],
+  "awards": [
+    {
       "title": "Award",
       "date": "2014-11-01",
       "awarder": "Company",
       "summary": "There is no spoon."
-    }],
-    "certificates": [{
+    }
+  ],
+  "certificates": [
+    {
       "name": "Certificate",
       "date": "2021-11-07",
       "issuer": "Company",
       "url": "https://certificate.com"
-    }],
-    "publications": [{
+    }
+  ],
+  "publications": [
+    {
       "name": "Publication",
       "publisher": "Company",
       "releaseDate": "2014-10-01",
       "url": "https://publication.com",
       "summary": "Description…"
-    }],
-    "skills": [{
+    }
+  ],
+  "skills": [
+    {
       "name": "Javascript",
       "level": "Medium",
       "keywords": [
         "JavaScript"
       ]
-    },{
+    },
+    {
       "name": "React.js",
       "level": "Medium",
       "keywords": [
         "React"
       ]
-    },{
+    },
+    {
       "name": "Next.js",
       "level": "Medium",
       "keywords": [
         "Next"
       ]
-    },{
+    },
+    {
       "name": "Node.js",
       "level": "Medium",
       "keywords": [
         "Node"
       ]
-    },{
+    },
+    {
       "name": "Python",
       "level": "Medium",
       "keywords": [
         "Python"
       ]
-    },{
+    },
+    {
       "name": "Java",
       "level": "Medium",
       "keywords": [
         "Java"
       ]
-    },{
+    },
+    {
       "name": "Spring Boot",
       "level": "Medium",
       "keywords": [
         "Spring Boot"
       ]
-    },{
+    },
+    {
       "name": "Sql",
       "level": "Medium",
       "keywords": [
         "Sql"
       ]
-    },{
+    },
+    {
       "name": "Tailwind CSS",
       "level": "Medium",
       "keywords": [
         "CSS"
       ]
-    },{
+    },
+    {
       "name": "Git",
       "level": "Medium",
       "keywords": [
         "Git"
       ]
-    },{
+    },
+    {
       "name": "Github",
       "level": "Medium",
       "keywords": [
         "GitHub"
       ]
-    }],
-    "languages": [{
+    }
+  ],
+  "languages": [
+    {
       "language": "Español",
       "fluency": "Nativo"
-    },{
+    },
+    {
       "language": "Inglés",
       "fluency": "Intermedio"
-    }],
-    "interests": [{
+    }
+  ],
+  "interests": [
+    {
       "name": "Wildlife",
       "keywords": [
         "Ferrets",
         "Unicorns"
       ]
-    }],
-    "references": [{
+    }
+  ],
+  "references": [
+    {
       "name": "Jane Doe",
       "reference": "Reference…"
-    }],
-    "projects": [{
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mapa distribuidores Solidview",
+      "isActive": true,
+      "startDate": "2026-02-15",
+      "endDate": "2025-02-20",
+      "description": "Mapa interactivo para la marca Solidview para poder mostrar los distribuidores de productos a nivel nacional.",
+      "highlights": [
+        "React.js",
+        "Supabase"
+      ],
+      "url": "https://mapadistribuidores.solidview.com.co/"
+    },
+    {
+      "name": "Portal distribuidores Solidview",
+      "isActive": true,
+      "startDate": "2026-02-20",
+      "endDate": "2025-03-05",
+      "description": "Un portal moderno y eficiente para la gestión de ventas y distribución B2B, diseñado para optimizar la colaboración entre Solidview y sus clientes corporativos.",
+      "highlights": [
+        "React.js",
+        "Supabase"
+      ],
+      "url": "https://portaldistribuidores.solidview.com.co/"
+    },
+    {
+      "name": "Finanzas Pro",
+      "isActive": true,
+      "startDate": "2026-04-20",
+      "endDate": "2025-04-30",
+      "description": "Finanzas Pro es una aplicación moderna de gestión financiera diseñada para el seguimiento de proyectos, abonos y cumplimiento de metas. Construida con Next.js 15, Supabase y Tailwind CSS.",
+      "highlights": [
+        "Next.js",
+        "Supabase",
+        "Tailwind CSS"
+      ],
+      "url": "https://finanzaspro.agentefilia.com/"
+    },
+    {
       "name": "Fili CRM",
-      "isActive":true,
+      "isActive": true,
       "startDate": "2024-09-15",
       "endDate": "2025-02-15",
       "description": "Es un gestor de proyectos para la toma del control de equipos de trabajo, proyectos, tareas y objetivos de manera simple. Mide la productividad y tiempos en los procesos del negocio. Implementa un sistema de suscripciones para obtener más capacidad de servicio",
@@ -221,9 +294,10 @@
         "PostgreSQL"
       ],
       "url": "https://app.fili.com.co"
-    },{
+    },
+    {
       "name": "Movies app",
-      "isActive":true,
+      "isActive": true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Aplicación web que utiliza la API de OMDB para ofrecer a los usuarios una experiencia de exploración de películas y series. Con funciones de búsqueda y filtrado, brinda detalles detallados de cada título.",
@@ -237,7 +311,7 @@
     },
     {
       "name": "Gestión de Productos",
-      "isActive":false,
+      "isActive": false,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Aplicación web que ofrece autenticación segura mediante NextAuth. Los usuarios pueden realizar operaciones de CRUD para subir productos con imagenes",
@@ -247,11 +321,11 @@
         "Prisma ORM",
         "PostgreSQL"
       ],
-      "github":"https://github.com/Dartrix137/nextjs-prisma-credentials"
+      "github": "https://github.com/Dartrix137/nextjs-prisma-credentials"
     },
     {
       "name": "Predictor Pruebas saber 11",
-      "isActive":false,
+      "isActive": false,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Proyecto final del diplomado de Ciencia de Datos. Utiliza algoritmos de machine learning para predecir el rendimiento de estudiantes en las pruebas de estado 'Pruebas Saber 11' basado en su contexto socioeconómico.",
@@ -264,7 +338,7 @@
     },
     {
       "name": "Task app",
-      "isActive":true,
+      "isActive": true,
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Aplicación web para gestión de tareas. Ofrece operaciones CRUD completas, permitiendo a los usuarios crear, organizar, editar y eliminar tareas fácilmente.",
@@ -275,6 +349,7 @@
         "PostgreSQL"
       ],
       "url": "https://new-task-app.netlify.app/",
-      "github":"https://github.com/Dartrix137/nextjs-prisma-crud"
-    }]
-  }
+      "github": "https://github.com/Dartrix137/nextjs-prisma-crud"
+    }
+  ]
+}
