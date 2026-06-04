@@ -254,7 +254,8 @@
         "React.js",
         "Supabase"
       ],
-      "url": "https://mapadistribuidores.solidview.com.co/"
+      "url": "https://mapadistribuidores.solidview.com.co/",
+      "github": "https://github.com/Dartrix137/mapa_distribuidores"
     },
     {
       "name": "Portal distribuidores Solidview",
@@ -266,7 +267,8 @@
         "React.js",
         "Supabase"
       ],
-      "url": "https://portaldistribuidores.solidview.com.co/"
+      "url": "https://portaldistribuidores.solidview.com.co/",
+      "github": "https://github.com/Dartrix137/portal_distribuidores_solidview"
     },
     {
       "name": "Finanzas Pro",
@@ -279,7 +281,8 @@
         "Supabase",
         "Tailwind CSS"
       ],
-      "url": "https://finanzaspro.agentefilia.com/"
+      "url": "https://finanzaspro.agentefilia.com/",
+      "github": "https://github.com/Dartrix137/finanzas_pro"
     },
     {
       "name": "Fili CRM",
