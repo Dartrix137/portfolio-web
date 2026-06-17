@@ -7,12 +7,15 @@ import Projects from '@/components/sections/Projects.astro'
 import Skills from '@/components/sections/Skills.astro'
 import Experience from '@/components/sections/Experience.astro'
 import KeyboardManager from "@/components/KeyboardManager.astro"
-import {basics} from '@cv'
+import LanguageToggle from "@/components/LanguageToggle.astro"
+import { basics } from '@cv'
+import { basics as basicsEn } from '@cv-en'
 
-const {name, label}=basics
+const { name } = basics
+const { label } = basicsEn
 ---
 
-<Layout title={`Portafilo de ${name}-${label}`}>
+<Layout title={`${name} | ${label}`}>
 	<main>
 		<Hero/>
 		<About/>
@@ -21,6 +24,7 @@ const {name, label}=basics
 		<Education/>
 		<Projects/>
 	</main>
+	<LanguageToggle />
 	<KeyboardManager />
 </Layout>
 

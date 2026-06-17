@@ -1,72 +1,59 @@
 ---
 import Section from "@/components/Section.astro";
 import { work } from "@cv";
+import { work as workEn } from "@cv-en";
+
+const monthsEs = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dec"];
+const monthsEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 ---
 
-<Section title="Experiencia">
+<Section titleEs="Experiencia" titleEn="Experience">
     <ul>
         {
-            work.map(
-                ({
-                    name,
-                    startDate,
-                    endDate,
-                    position,
-                    summary,
-                    highlights,
-                    url,
-                }) => {
-                    const months = [
-                        "Ene",
-                        "Feb",
-                        "Mar",
-                        "Abr",
-                        "May",
-                        "Jun",
-                        "Jul",
-                        "Ago",
-                        "Sep",
-                        "Oct",
-                        "Nov",
-                        "Dec",
-                    ];
-                    const startYear = new Date(startDate).getFullYear();
-                    const startMonth=new Date(startDate).getMonth()
-                    const endYear =
-                        endDate != null
-                            ? new Date(endDate).getFullYear()
-                            : "Actual";
-                    const endMonth:any= endDate!=null? new Date(endDate).getMonth():""
-                    const years = `${months[startMonth]} ${startYear} - ${months[endMonth]} ${endYear}`;
+            work.map((job, i) => {
+                const jobEn = workEn[i];
 
-                    return (
-                        <li>
-                            <article>
-                                <header>
-                                    <div>
-                                        <h3>
-                                            <a
-                                                href={url}
-                                                title={`Ver ${name}`}
-                                                target="_blank"
-                                            >
-                                                {name}
-                                            </a>
-                                        </h3>
-                                        <h4>{position}</h4>
-                                    </div>
+                const startYear = new Date(job.startDate).getFullYear();
+                const startMonth = new Date(job.startDate).getMonth();
+                const hasEnd = job.endDate != null && job.endDate !== "";
+                const endYear = hasEnd ? new Date(job.endDate).getFullYear() : null;
+                const endMonth = hasEnd ? new Date(job.endDate).getMonth() : null;
 
-                                    <time>{years}</time>
-                                </header>
+                const yearsEs = hasEnd
+                    ? `${monthsEs[startMonth]} ${startYear} - ${monthsEs[endMonth!]} ${endYear}`
+                    : `${monthsEs[startMonth]} ${startYear} - Actual`;
+                const yearsEn = hasEnd
+                    ? `${monthsEn[startMonth]} ${startYear} - ${monthsEn[endMonth!]} ${endYear}`
+                    : `${monthsEn[startMonth]} ${startYear} - Present`;
 
-                                <footer>
-                                    <p>{summary}</p>
-                                </footer>
-                            </article>
-                        </li>
-                    );
-                },
-            )
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <div>
+                                    <h3>
+                                        <a href={job.url} title={`View ${job.name}`} target="_blank">
+                                            {job.name}
+                                        </a>
+                                    </h3>
+                                    <h4>
+                                        <span class="lang lang-es">{job.position}</span>
+                                        <span class="lang lang-en">{jobEn.position}</span>
+                                    </h4>
+                                </div>
+                                <time>
+                                    <span class="lang lang-es">{yearsEs}</span>
+                                    <span class="lang lang-en">{yearsEn}</span>
+                                </time>
+                            </header>
+                            <footer>
+                                <p class="lang lang-es">{job.summary}</p>
+                                <p class="lang lang-en">{jobEn.summary}</p>
+                            </footer>
+                        </article>
+                    </li>
+                );
+            })
         }
     </ul>
 </Section>

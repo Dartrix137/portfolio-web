@@ -1,84 +1,84 @@
 ---
 import Section from "../Section.astro";
-
 import { education } from "@cv";
+import { education as educationEn } from "@cv-en";
+
+const monthsEs = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dec"];
+const monthsEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 ---
 
-<Section title="Educación">
-  <ul>
-    {
-      education.map(({ institution, startDate, endDate, area }) => {
-        const months = [
-          "Ene",
-          "Feb",
-          "Mar",
-          "Abr",
-          "May",
-          "Jun",
-          "Jul",
-          "Ago",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ];
-        const startYear = new Date(startDate).getFullYear();
-        const startMonth = new Date(startDate).getMonth();
-        const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual";
-        const endMonth: any =
-          endDate != null ? new Date(endDate).getMonth() : "";
-        const years = `${months[startMonth]} ${startYear} - ${months[endMonth]} ${endYear}`;
+<Section titleEs="Educación" titleEn="Education">
+    <ul>
+        {
+            education.map((edu, i) => {
+                const eduEn = educationEn[i];
 
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{institution}</h3>
-                </div>
+                const startYear = new Date(edu.startDate).getFullYear();
+                const startMonth = new Date(edu.startDate).getMonth();
+                const hasEnd = edu.endDate != null && edu.endDate !== "";
+                const endYear = hasEnd ? new Date(edu.endDate).getFullYear() : null;
+                const endMonth = hasEnd ? new Date(edu.endDate).getMonth() : null;
 
-                <time>{years}</time>
-              </header>
+                const yearsEs = hasEnd
+                    ? `${monthsEs[startMonth]} ${startYear} - ${monthsEs[endMonth!]} ${endYear}`
+                    : `${monthsEs[startMonth]} ${startYear} - Actual`;
+                const yearsEn = hasEnd
+                    ? `${monthsEn[startMonth]} ${startYear} - ${monthsEn[endMonth!]} ${endYear}`
+                    : `${monthsEn[startMonth]} ${startYear} - Present`;
 
-              <footer>
-                <p>{area}</p>
-              </footer>
-            </article>
-          </li>
-        );
-      })
-    }
-  </ul>
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <div>
+                                    <h3>{edu.institution}</h3>
+                                </div>
+                                <time>
+                                    <span class="lang lang-es">{yearsEs}</span>
+                                    <span class="lang lang-en">{yearsEn}</span>
+                                </time>
+                            </header>
+                            <footer>
+                                <p>
+                                    <span class="lang lang-es">{edu.studyType} en {edu.area}</span>
+                                    <span class="lang lang-en">{eduEn.studyType} in {eduEn.area}</span>
+                                </p>
+                            </footer>
+                        </article>
+                    </li>
+                );
+            })
+        }
+    </ul>
 </Section>
 
 <style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  article h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
-
-  time {
-    font-size: 0.95rem;
-    min-width: 102px;
-  }
-
-  @media (width <= 700px) {
-    time {
-      text-align: right;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
-  }
+
+    article h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    time {
+        font-size: 0.95rem;
+        min-width: 102px;
+    }
+
+    @media (width <= 700px) {
+        time {
+            text-align: right;
+        }
+    }
 </style>

@@ -1,15 +1,15 @@
 ---
 import Section from '@/components/Section.astro'
-import {basics} from '@cv'
+import { basics } from '@cv'
+import { basics as basicsEn } from '@cv-en'
 
-const { summary }=basics
+const { summary } = basics
+const { summary: summaryEn } = basicsEn
 ---
-<Section title="Sobre mí">
-    <p>
-        {summary}
-    </p>
+<Section titleEs="Sobre mí" titleEn="About me">
+    <p class="lang lang-es">{summary}</p>
+    <p class="lang lang-en">{summaryEn}</p>
 </Section>
-
 
 <style>
     p{

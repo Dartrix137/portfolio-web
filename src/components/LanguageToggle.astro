@@ -1,0 +1,76 @@
+---
+---
+<div class="lang-toggle no-print">
+    <button id="lang-toggle-btn" aria-label="Toggle language">
+        <span class="lang-option" data-lang-value="en">EN</span>
+        <span class="divider">|</span>
+        <span class="lang-option" data-lang-value="es">ES</span>
+    </button>
+</div>
+
+<script>
+    const btn = document.getElementById('lang-toggle-btn');
+    const html = document.documentElement;
+
+    function updateToggle() {
+        const currentLang = html.lang;
+        document.querySelectorAll<HTMLElement>('.lang-option').forEach((el) => {
+            el.classList.toggle('active', el.dataset.langValue === currentLang);
+        });
+    }
+
+    updateToggle();
+
+    btn?.addEventListener('click', (e) => {
+        const target = (e.target as HTMLElement).closest<HTMLElement>('[data-lang-value]');
+        const newLang = target?.dataset.langValue ?? (html.lang === 'en' ? 'es' : 'en');
+        html.lang = newLang;
+        localStorage.setItem('portfolio-lang', newLang);
+        updateToggle();
+    });
+</script>
+
+<style>
+    .lang-toggle {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 100;
+    }
+
+    button {
+        background: #3f3f3f;
+        border: 1px solid #636161;
+        border-radius: 6px;
+        color: #dfd9d9;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        font-family: inherit;
+        letter-spacing: 0.05rem;
+        transition: background 0.2s;
+    }
+
+    button:hover {
+        background: #555;
+    }
+
+    .lang-option {
+        color: #777;
+        transition: color 0.2s;
+        cursor: pointer;
+    }
+
+    .lang-option.active {
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .divider {
+        color: #555;
+        pointer-events: none;
+    }
+</style>
